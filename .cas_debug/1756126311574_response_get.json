@@ -1,0 +1,83 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://helium.cas.org/integration/v1/substances/substance%2Fpt%2F1602506659",
+    "params": {},
+    "headers": {
+      "User-Agent": "python-requests/2.32.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Type": "application/json",
+      "Authorization": "Bearer ***REDACTED***"
+    }
+  },
+  "status_code": 200,
+  "text": "{\"count\":1,\"substance\":{\"uri\":\"substance/pt/1602506659\",\"casRn\":\"1602506-65-9\",\"name\":\"<em>N</em>-(3-Methylcyclobutyl)benzamide\",\"molecularFormula\":\"C<sub>12</sub>H<sub>15</sub>NO\",\"molecularWeight\":189.25,\"preferredRn\":\"1602506-65-9\",\"deletedRns\":[],\"alternateRns\":[],\"componentRn\":null,\"synonyms\":[],\"entryDate\":\"2014-05-12\",\"properties\":{\"boilingPoint\":null,\"density\":null,\"meltingPoint\":null,\"predictedPKa\":null},\"capturedExperimentalProperties\":{\"experimentalBoilingPoints\":[],\"experimentalDensities\":[],\"experimentalElectricConductances\":[],\"experimentalElectricConductivities\":[],\"experimentalElectricResistances\":[],\"experimentalElectricResistivities\":[],\"experimentalGlassTransitionTemperatures\":[],\"experimentalMagneticMoments\":[],\"experimentalMedianLethalDoses\":[],\"experimentalMeltingPoints\":[],\"experimentalOpticalRotatoryPowers\":[],\"experimentalRefractiveIndices\":[],\"experimentalTensileStrengths\":[]},\"capturedExperimentalSpectra\":null,\"smiles\":\"O=C(NC1CC(C)C1)C=2C=CC=CC2\",\"canonicalSmiles\":\"O=C(NC1CC(C)C1)C=2C=CC=CC2\",\"isomericSmiles\":\"C(NC1CC(C)C1)(=O)C2=CC=CC=C2\",\"inchi\":\"InChI=1S/C12H15NO/c1-9-7-11(8-9)13-12(14)10-5-3-2-4-6-10/h2-6,9,11H,7-8H2,1H3,(H,13,14)\",\"molfiles\":[\"N-(3-Methylcyclobutyl)benzamide\\nC12H15NO\\n1602506-65-9 Copyright (C) 2025 ACS\\n 14 15  0  0  0  0  0  0  0  0999 V2000\\n    4.6200    2.4227    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    5.3900    1.0889    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\\n    5.3900    3.7564    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\\n   10.6479    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    3.0800    2.4227    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    2.3100    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    2.3100    3.7564    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    0.7700    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    0.7700    3.7564    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    0.0000    2.4227    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    6.9300    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    8.0189    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    8.0189    2.1779    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    9.1079    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n  1  2  1  0  0  0  0\\n  1  3  2  0  0  0  0\\n  1  5  1  0  0  0  0\\n  2 11  1  0  0  0  0\\n  4 14  1  0  0  0  0\\n  5  6  2  0  0  0  0\\n  5  7  1  0  0  0  0\\n  6  8  1  0  0  0  0\\n  7  9  2  0  0  0  0\\n  8 10  2  0  0  0  0\\n  9 10  1  0  0  0  0\\n 11 12  1  0  0  0  0\\n 11 13  1  0  0  0  0\\n 12 14  1  0  0  0  0\\n 13 14  1  0  0  0  0\\nM  END\\n\",\"N-(3-Methylcyclobutyl)benzamide\\nC12H15NO\\n1602506-65-9 Copyright (C) 2025 ACS\\n  0  0  0     0  0            999 V3000\\nM  V30 BEGIN CTAB\\nM  V30 COUNTS  14 15 0 0 0\\nM  V30 BEGIN ATOM\\nM  V30 1 C 4.6200 2.4227 0.0 0\\nM  V30 2 N 5.3900 1.0889 0.0 0\\nM  V30 3 O 5.3900 3.7564 0.0 0\\nM  V30 4 C 10.6479 1.0889 0.0 0\\nM  V30 5 C 3.0800 2.4227 0.0 0\\nM  V30 6 C 2.3100 1.0889 0.0 0\\nM  V30 7 C 2.3100 3.7564 0.0 0\\nM  V30 8 C 0.7700 1.0889 0.0 0\\nM  V30 9 C 0.7700 3.7564 0.0 0\\nM  V30 10 C 0.0000 2.4227 0.0 0\\nM  V30 11 C 6.9300 1.0889 0.0 0\\nM  V30 12 C 8.0189 0.0000 0.0 0\\nM  V30 13 C 8.0189 2.1779 0.0 0\\nM  V30 14 C 9.1079 1.0889 0.0 0\\nM  V30 END ATOM\\nM  V30 BEGIN BOND\\nM  V30 1 1 1 2\\nM  V30 2 2 1 3\\nM  V30 3 1 1 5\\nM  V30 4 1 2 11\\nM  V30 5 1 4 14\\nM  V30 6 2 5 6\\nM  V30 7 1 5 7\\nM  V30 8 1 6 8\\nM  V30 9 2 7 9\\nM  V30 10 2 8 10\\nM  V30 11 1 9 10\\nM  V30 12 1 11 12\\nM  V30 13 1 11 13\\nM  V30 14 1 12 14\\nM  V30 15 1 13 14\\nM  V30 END BOND\\nM  V30 END CTAB\\nM  END\\n\"],\"structure\":{\"component\":[{\"uri\":\"substance/pt/1602506659\",\"casRn\":\"1602506-65-9\",\"index\":null,\"coefficient\":null,\"singleAtomFragment\":false,\"highlighted\":false,\"svg\":\"<svg class=\\\"cas-structure-single-component-image\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" xmlns:xlink=\\\"http://www.w3.org/1999/xlink\\\" viewBox=\\\"0 0 214 84\\\" height=\\\"84\\\" width=\\\"214\\\"><",
+  "json": {
+    "count": 1,
+    "substance": {
+      "uri": "substance/pt/1602506659",
+      "casRn": "1602506-65-9",
+      "name": "<em>N</em>-(3-Methylcyclobutyl)benzamide",
+      "molecularFormula": "C<sub>12</sub>H<sub>15</sub>NO",
+      "molecularWeight": 189.25,
+      "preferredRn": "1602506-65-9",
+      "deletedRns": [],
+      "alternateRns": [],
+      "componentRn": null,
+      "synonyms": [],
+      "entryDate": "2014-05-12",
+      "properties": {
+        "boilingPoint": null,
+        "density": null,
+        "meltingPoint": null,
+        "predictedPKa": null
+      },
+      "capturedExperimentalProperties": {
+        "experimentalBoilingPoints": [],
+        "experimentalDensities": [],
+        "experimentalElectricConductances": [],
+        "experimentalElectricConductivities": [],
+        "experimentalElectricResistances": [],
+        "experimentalElectricResistivities": [],
+        "experimentalGlassTransitionTemperatures": [],
+        "experimentalMagneticMoments": [],
+        "experimentalMedianLethalDoses": [],
+        "experimentalMeltingPoints": [],
+        "experimentalOpticalRotatoryPowers": [],
+        "experimentalRefractiveIndices": [],
+        "experimentalTensileStrengths": []
+      },
+      "capturedExperimentalSpectra": null,
+      "smiles": "O=C(NC1CC(C)C1)C=2C=CC=CC2",
+      "canonicalSmiles": "O=C(NC1CC(C)C1)C=2C=CC=CC2",
+      "isomericSmiles": "C(NC1CC(C)C1)(=O)C2=CC=CC=C2",
+      "inchi": "InChI=1S/C12H15NO/c1-9-7-11(8-9)13-12(14)10-5-3-2-4-6-10/h2-6,9,11H,7-8H2,1H3,(H,13,14)",
+      "molfiles": [
+        "N-(3-Methylcyclobutyl)benzamide\nC12H15NO\n1602506-65-9 Copyright (C) 2025 ACS\n 14 15  0  0  0  0  0  0  0  0999 V2000\n    4.6200    2.4227    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.3900    1.0889    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    5.3900    3.7564    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   10.6479    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0800    2.4227    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3100    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.3100    3.7564    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7700    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7700    3.7564    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0000    2.4227    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    6.9300    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.0189    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.0189    2.1779    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    9.1079    1.0889    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0  0  0  0\n  1  3  2  0  0  0  0\n  1  5  1  0  0  0  0\n  2 11  1  0  0  0  0\n  4 14  1  0  0  0  0\n  5  6  2  0  0  0  0\n  5  7  1  0  0  0  0\n  6  8  1  0  0  0  0\n  7  9  2  0  0  0  0\n  8 10  2  0  0  0  0\n  9 10  1  0  0  0  0\n 11 12  1  0  0  0  0\n 11 13  1  0  0  0  0\n 12 14  1  0  0  0  0\n 13 14  1  0  0  0  0\nM  END\n",
+        "N-(3-Methylcyclobutyl)benzamide\nC12H15NO\n1602506-65-9 Copyright (C) 2025 ACS\n  0  0  0     0  0            999 V3000\nM  V30 BEGIN CTAB\nM  V30 COUNTS  14 15 0 0 0\nM  V30 BEGIN ATOM\nM  V30 1 C 4.6200 2.4227 0.0 0\nM  V30 2 N 5.3900 1.0889 0.0 0\nM  V30 3 O 5.3900 3.7564 0.0 0\nM  V30 4 C 10.6479 1.0889 0.0 0\nM  V30 5 C 3.0800 2.4227 0.0 0\nM  V30 6 C 2.3100 1.0889 0.0 0\nM  V30 7 C 2.3100 3.7564 0.0 0\nM  V30 8 C 0.7700 1.0889 0.0 0\nM  V30 9 C 0.7700 3.7564 0.0 0\nM  V30 10 C 0.0000 2.4227 0.0 0\nM  V30 11 C 6.9300 1.0889 0.0 0\nM  V30 12 C 8.0189 0.0000 0.0 0\nM  V30 13 C 8.0189 2.1779 0.0 0\nM  V30 14 C 9.1079 1.0889 0.0 0\nM  V30 END ATOM\nM  V30 BEGIN BOND\nM  V30 1 1 1 2\nM  V30 2 2 1 3\nM  V30 3 1 1 5\nM  V30 4 1 2 11\nM  V30 5 1 4 14\nM  V30 6 2 5 6\nM  V30 7 1 5 7\nM  V30 8 1 6 8\nM  V30 9 2 7 9\nM  V30 10 2 8 10\nM  V30 11 1 9 10\nM  V30 12 1 11 12\nM  V30 13 1 11 13\nM  V30 14 1 12 14\nM  V30 15 1 13 14\nM  V30 END BOND\nM  V30 END CTAB\nM  END\n"
+      ],
+      "structure": {
+        "component": [
+          {
+            "uri": "substance/pt/1602506659",
+            "casRn": "1602506-65-9",
+            "index": null,
+            "coefficient": null,
+            "singleAtomFragment": false,
+            "highlighted": false,
+            "svg": "<svg class=\"cas-structure-single-component-image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 214 84\" height=\"84\" width=\"214\"><svg class=\"cas-structure-maf\" y=\"0\" x=\"0\" style=\"fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:'Dialog'; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"214\" viewBox=\"0 0 214.0 84.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"84\"\n><!--Generated in ChemDoodle 12.8.0--><defs id=\"genericDefs\"\n  /><g\n  ><g transform=\"translate(107,44)\" style=\"text-rendering:geometricPrecision; color-rendering:optimizeQuality; color-interpolation:sRGB; stroke-linecap:butt; image-rendering:optimizeQuality;\"\n    ><line y2=\"9.2367\" style=\"fill:none;\" x1=\"-13.713\" x2=\"-2.2567\" y1=\"-10.608\"\n      /><line y2=\"-30.065\" style=\"fill:none;\" x1=\"-12.7027\" x2=\"-0.4584\" y1=\"-8.8579\"\n      /><line y2=\"-31.8151\" style=\"fill:none;\" x1=\"-15.7337\" x2=\"-3.4895\" y1=\"-10.608\"\n      /><line y2=\"-10.608\" style=\"fill:none;\" x1=\"-13.713\" x2=\"-43.713\" y1=\"-10.608\"\n      /><line y2=\"15.375\" style=\"fill:none;\" x1=\"6.6386\" x2=\"31.287\" y1=\"15.375\"\n      /><line y2=\"15.375\" style=\"fill:none;\" x1=\"103.713\" x2=\"73.713\" y1=\"15.375\"\n      /><line y2=\"15.375\" style=\"fill:none;\" x1=\"-43.713\" x2=\"-58.713\" y1=\"-10.608\"\n      /><line y2=\"11.8751\" style=\"fill:none;\" x1=\"-47.7545\" x2=\"-60.7339\" y1=\"-10.6078\"\n      /><line y2=\"-36.588\" style=\"fill:none;\" x1=\"-43.713\" x2=\"-58.713\" y1=\"-10.608\"\n      /><line y2=\"15.375\" style=\"fill:none;\" x1=\"-58.713\" x2=\"-88.713\" y1=\"15.375\"\n      /><line y2=\"-36.588\" style=\"fill:none;\" x1=\"-58.713\" x2=\"-88.713\" y1=\"-36.588\"\n      /><line y2=\"-33.088\" style=\"fill:none;\" x1=\"-60.7337\" x2=\"-86.6923\" y1=\"-33.088\"\n      /><line y2=\"-10.608\" style=\"fill:none;\" x1=\"-88.713\" x2=\"-103.713\" y1=\"15.375\"\n      /><line y2=\"-10.6078\" style=\"fill:none;\" x1=\"-86.6921\" x2=\"-99.6715\" y1=\"11.8751\"\n      /><line y2=\"-10.608\" style=\"fill:none;\" x1=\"-88.713\" x2=\"-103.713\" y1=\"-36.588\"\n      /><line y2=\"36.588\" style=\"fill:none;\" x1=\"31.287\" x2=\"52.5\" y1=\"15.375\"\n      /><line y2=\"-5.838\" style=\"fill:none;\" x1=\"31.287\" x2=\"52.5\" y1=\"15.375\"\n      /><line y2=\"15.375\" style=\"fill:none;\" x1=\"52.5\" x2=\"73.713\" y1=\"36.588\"\n      /><line y2=\"15.375\" style=\"fill:none;\" x1=\"52.5\" x2=\"73.713\" y1=\"-5.838\"\n      /><path d=\"M-13.463 -10.175 L-13.713 -10.608 L-14.213 -10.608\" style=\"fill:none; stroke-miterlimit:5;\"\n    /></g\n    ><g transform=\"translate(107,44)\" style=\"stroke-linecap:butt; fill:rgb(0,5,255); text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'Open Sans'; stroke:rgb(0,5,255); color-interpolation:sRGB; stroke-miterlimit:5;\"\n    ><path style=\"stroke:none;\" d=\"M4.6386 19.5312 L3.4979 19.5312 L-1.1896 12.3438 L-1.2364 12.3438 Q-1.1427 13.6094 -1.1427 14.6562 L-1.1427 19.5312 L-2.0646 19.5312 L-2.0646 10.9688 L-0.9396 10.9688 L3.7323 18.125 L3.7792 18.125 Q3.7792 17.9688 3.7323 17.1094 Q3.6854 16.25 3.7011 15.875 L3.7011 10.9688 L4.6386 10.9688 L4.6386 19.5312 Z\"\n      /><path style=\"stroke:none;\" d=\"M4.5448 29.0938 L3.5448 29.0938 L3.5448 25.0625 L-0.9708 25.0625 L-0.9708 29.0938 L-1.9708 29.0938 L-1.9708 20.5312 L-0.9708 20.5312 L-0.9708 24.1719 L3.5448 24.1719 L3.5448 20.5312 L4.5448 20.5312 L4.5448 29.0938 Z\"\n      /><path d=\"M5.2245 -36.6583 Q5.2245 -34.5958 4.1854 -33.4161 Q3.1464 -32.2364 1.3026 -32.2364 Q-0.588 -32.2364 -1.6193 -33.4005 Q-2.6505 -34.5646 -2.6505 -36.6739 Q-2.6505 -38.7677 -1.6193 -39.9161 Q-0.588 -41.0646 1.3026 -41.0646 Q3.162 -41.0646 4.1932 -39.8927 Q5.2245 -38.7208 5.2245 -36.6583 ZM-1.6036 -36.6583 Q-1.6036 -34.9239 -0.8614 -34.0177 Q-0.1193 -33.1114 1.3026 -33.1114 Q2.7245 -33.1114 3.4511 -34.0099 Q4.1776 -34.9083 4.1776 -36.6583 Q4.1776 -38.3927 3.4511 -39.2833 Q2.7245 -40.1739 1.3026 -40.1739 Q-0.1193 -40.1739 -0.8614 -39.2755 Q-1.6036 -38.3771 -1.6036 -36.6583 Z\" style=\"fill:rgb(230,0,0); stroke:none;\"\n      /><path d=\"M-43.963 -10.175 L-43.713 -10.608 L-43.963 -11.041\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M-58.463 14.942 L-58.713 15.375 L-59.213 15.375\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M-58.463 -36.155 L-58.713 -36.588 L-59.213 -36.588\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M-88.213 15.375 L-88.713 15.375 L-88.963 14.942\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M-88.213 -36.588 L-88.713 -36.588 L-88.963 -36.155\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M-103.463 -10.175 L-103.713 -10.608 L-103.463 -11.041\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M52.1464 36.2344 L52.5 36.588 L52.8536 36.2344\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M52.1464 -5.4844 L52.5 -5.838 L52.8536 -5.4844\" style=\"fill:none; stroke:black;\"\n    /></g\n  ></g\n></svg\n>\n</svg>",
+            "stereoMessages": [],
+            "diagnosticMessages": [],
+            "structures": []
+          }
+        ]
+      },
+      "suppliersCount": "2",
+      "regulatoryDataAvailable": false,
+      "hitRn": null,
+      "hitName": null
+    }
+  }
+}

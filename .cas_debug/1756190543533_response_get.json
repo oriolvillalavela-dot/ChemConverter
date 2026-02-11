@@ -1,0 +1,124 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://helium.cas.org/integration/v1/substances/substance%2Fpt%2F873373343",
+    "params": {},
+    "headers": {
+      "User-Agent": "python-requests/2.32.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Type": "application/json",
+      "Authorization": "Bearer ***REDACTED***"
+    }
+  },
+  "status_code": 200,
+  "text": "{\"count\":1,\"substance\":{\"uri\":\"substance/pt/873373343\",\"casRn\":\"873373-34-3\",\"name\":\"1-(Bromomethyl)-4-(difluoromethyl)benzene\",\"molecularFormula\":\"C<sub>8</sub>H<sub>7</sub>BrF<sub>2</sub>\",\"molecularWeight\":221.04,\"preferredRn\":\"873373-34-3\",\"deletedRns\":[],\"alternateRns\":[],\"componentRn\":null,\"synonyms\":[\"1-Bromomethyl-4-difluoromethylbenzene\",\"4-(Difluoromethyl)benzyl bromide\"],\"entryDate\":\"2006-02-02\",\"properties\":{\"boilingPoint\":null,\"density\":null,\"meltingPoint\":null,\"predictedPKa\":null},\"capturedExperimentalProperties\":{\"experimentalBoilingPoints\":[],\"experimentalDensities\":[],\"experimentalElectricConductances\":[],\"experimentalElectricConductivities\":[],\"experimentalElectricResistances\":[],\"experimentalElectricResistivities\":[],\"experimentalGlassTransitionTemperatures\":[],\"experimentalMagneticMoments\":[],\"experimentalMedianLethalDoses\":[],\"experimentalMeltingPoints\":[],\"experimentalOpticalRotatoryPowers\":[],\"experimentalRefractiveIndices\":[],\"experimentalTensileStrengths\":[]},\"capturedExperimentalSpectra\":{\"experimentalIRSpectra\":[],\"experimentalMassSpectra\":[],\"experimentalProton1HNMRs\":[{\"id\":\"EN300-1084873.nmr.y2020\",\"observedNucleus\":null,\"experimentalSpectrumNumericPeakData\":null,\"experimentalSpectrumSolventCondition\":{\"displayValue\":\"Chloroform-<ital>d</ital>\",\"substanceURI\":\"substance/pt/865496\"},\"experimentalSpectrumWorkingFrequencyCondition\":{\"displayValue\":\"400 MHz\"},\"experimentalSpectrumSpectrometerCondition\":null,\"experimentalSpectrumStandardCondition\":null,\"experimentalSpectrumTemperatureCondition\":{\"displayValue\":\"21 \u00b0C\"},\"dataSource\":{\"documentFinding\":null,\"attributionGroup\":{\"attributionCode\":\"ENAMINE\",\"fullAttributionText\":\"Spectral data were obtained from Enamine Ltd.\"}}}],\"experimentalCarbon13NMRs\":[],\"experimentalBoron11NMRs\":[],\"experimentalNitrogen15NMRs\":[],\"experimentalOxygen17NMRs\":[],\"experimentalFluorine19NMRs\":[],\"experimentalSilicon29NMRs\":[],\"experimentalPhosphorus31NMRs\":[],\"experimentalRamanSpectra\":[],\"experimentalUVVisibleSpectra\":[]},\"smiles\":\"FC(F)C1=CC=C(C=C1)CBr\",\"canonicalSmiles\":\"FC(F)C1=CC=C(C=C1)CBr\",\"isomericSmiles\":\"C(F)(F)C1=CC=C(CBr)C=C1\",\"inchi\":\"InChI=1S/C8H7BrF2/c9-5-6-1-3-7(4-2-6)8(10)11/h1-4,8H,5H2\",\"molfiles\":[\"1-(Bromomethyl)-4-(difluoromethyl)benzene\\nC8H7BrF2\\n873373-34-3 Copyright (C) 2025 ACS\\n 11 11  0  0  0  0  0  0  0  0999 V2000\\n    1.3337    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    0.0000    2.3101    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\\n    1.3337    0.0000    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\\n    6.6687    4.6201    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    8.0023    3.8501    0.0000 Br  0  0  0  0  0  0  0  0  0  0  0  0\\n    2.6675    2.3101    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    4.0012    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    2.6675    3.8501    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    5.3348    2.3101    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    4.0012    4.6201    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n    5.3348    3.8501    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\\n  1  2  1  0  0  0  0\\n  1  3  1  0  0  0  0\\n  1  6  1  0  0  0  0\\n  4  5  1  0  0  0  0\\n  4 11  1  0  0  0  0\\n  6  7  2  0  0  0  0\\n  6  8  1  0  0  0  0\\n  7  9  1  0  0  0  0\\n  8 10  2  0  0  0  0\\n  9 11  2  0  0  0  0\\n 10 11  1  0  0  0  0\\nM  END\\n\",\"1-(Bromomethyl)-4-(difluoromethyl)benzene\\nC8H7BrF2\\n873373-34-3 Copyright (C) 2025 ACS\\n  0  0  0     0  0            999 V3000\\nM  V30 BEGIN CTAB\\nM  V30 COUNTS  11 11 0 0 0\\nM  V30 BEGIN ATOM\\nM  V30 1 C 1.3337 1.5400 0.0 0\\nM  V30 2 F 0.0000 2.3101 0.0 0\\nM  V30 3 F 1.3337 0.0000 0.0 0\\nM  V30 4 C 6.6687 4.6201 0.0 0\\nM  V30 5 Br 8.0023 3.8501 0.0 0\\nM  V30 6 C 2.6675 2.3101 0.0 0\\nM  V30 7 C 4.0012 1.5400 0.0 0\\nM  V30 8 C 2.6675 3.8501 0.0 0\\nM  V30 9 C 5.3348 2.3101 0.0 0\\nM  V30 10 C 4.0012 4.6201 0.0 0\\nM  V30 11 C 5.3348 3.8501 0.0 0\\nM  V30 END ATOM\\nM  V30 BEGIN BOND\\nM  V30 1 1 1 2\\nM  V30 2 1 1",
+  "json": {
+    "count": 1,
+    "substance": {
+      "uri": "substance/pt/873373343",
+      "casRn": "873373-34-3",
+      "name": "1-(Bromomethyl)-4-(difluoromethyl)benzene",
+      "molecularFormula": "C<sub>8</sub>H<sub>7</sub>BrF<sub>2</sub>",
+      "molecularWeight": 221.04,
+      "preferredRn": "873373-34-3",
+      "deletedRns": [],
+      "alternateRns": [],
+      "componentRn": null,
+      "synonyms": [
+        "1-Bromomethyl-4-difluoromethylbenzene",
+        "4-(Difluoromethyl)benzyl bromide"
+      ],
+      "entryDate": "2006-02-02",
+      "properties": {
+        "boilingPoint": null,
+        "density": null,
+        "meltingPoint": null,
+        "predictedPKa": null
+      },
+      "capturedExperimentalProperties": {
+        "experimentalBoilingPoints": [],
+        "experimentalDensities": [],
+        "experimentalElectricConductances": [],
+        "experimentalElectricConductivities": [],
+        "experimentalElectricResistances": [],
+        "experimentalElectricResistivities": [],
+        "experimentalGlassTransitionTemperatures": [],
+        "experimentalMagneticMoments": [],
+        "experimentalMedianLethalDoses": [],
+        "experimentalMeltingPoints": [],
+        "experimentalOpticalRotatoryPowers": [],
+        "experimentalRefractiveIndices": [],
+        "experimentalTensileStrengths": []
+      },
+      "capturedExperimentalSpectra": {
+        "experimentalIRSpectra": [],
+        "experimentalMassSpectra": [],
+        "experimentalProton1HNMRs": [
+          {
+            "id": "EN300-1084873.nmr.y2020",
+            "observedNucleus": null,
+            "experimentalSpectrumNumericPeakData": null,
+            "experimentalSpectrumSolventCondition": {
+              "displayValue": "Chloroform-<ital>d</ital>",
+              "substanceURI": "substance/pt/865496"
+            },
+            "experimentalSpectrumWorkingFrequencyCondition": {
+              "displayValue": "400 MHz"
+            },
+            "experimentalSpectrumSpectrometerCondition": null,
+            "experimentalSpectrumStandardCondition": null,
+            "experimentalSpectrumTemperatureCondition": {
+              "displayValue": "21 \u00b0C"
+            },
+            "dataSource": {
+              "documentFinding": null,
+              "attributionGroup": {
+                "attributionCode": "ENAMINE",
+                "fullAttributionText": "Spectral data were obtained from Enamine Ltd."
+              }
+            }
+          }
+        ],
+        "experimentalCarbon13NMRs": [],
+        "experimentalBoron11NMRs": [],
+        "experimentalNitrogen15NMRs": [],
+        "experimentalOxygen17NMRs": [],
+        "experimentalFluorine19NMRs": [],
+        "experimentalSilicon29NMRs": [],
+        "experimentalPhosphorus31NMRs": [],
+        "experimentalRamanSpectra": [],
+        "experimentalUVVisibleSpectra": []
+      },
+      "smiles": "FC(F)C1=CC=C(C=C1)CBr",
+      "canonicalSmiles": "FC(F)C1=CC=C(C=C1)CBr",
+      "isomericSmiles": "C(F)(F)C1=CC=C(CBr)C=C1",
+      "inchi": "InChI=1S/C8H7BrF2/c9-5-6-1-3-7(4-2-6)8(10)11/h1-4,8H,5H2",
+      "molfiles": [
+        "1-(Bromomethyl)-4-(difluoromethyl)benzene\nC8H7BrF2\n873373-34-3 Copyright (C) 2025 ACS\n 11 11  0  0  0  0  0  0  0  0999 V2000\n    1.3337    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0000    2.3101    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    1.3337    0.0000    0.0000 F   0  0  0  0  0  0  0  0  0  0  0  0\n    6.6687    4.6201    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.0023    3.8501    0.0000 Br  0  0  0  0  0  0  0  0  0  0  0  0\n    2.6675    2.3101    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.0012    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.6675    3.8501    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.3348    2.3101    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.0012    4.6201    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    5.3348    3.8501    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0  0  0  0\n  1  3  1  0  0  0  0\n  1  6  1  0  0  0  0\n  4  5  1  0  0  0  0\n  4 11  1  0  0  0  0\n  6  7  2  0  0  0  0\n  6  8  1  0  0  0  0\n  7  9  1  0  0  0  0\n  8 10  2  0  0  0  0\n  9 11  2  0  0  0  0\n 10 11  1  0  0  0  0\nM  END\n",
+        "1-(Bromomethyl)-4-(difluoromethyl)benzene\nC8H7BrF2\n873373-34-3 Copyright (C) 2025 ACS\n  0  0  0     0  0            999 V3000\nM  V30 BEGIN CTAB\nM  V30 COUNTS  11 11 0 0 0\nM  V30 BEGIN ATOM\nM  V30 1 C 1.3337 1.5400 0.0 0\nM  V30 2 F 0.0000 2.3101 0.0 0\nM  V30 3 F 1.3337 0.0000 0.0 0\nM  V30 4 C 6.6687 4.6201 0.0 0\nM  V30 5 Br 8.0023 3.8501 0.0 0\nM  V30 6 C 2.6675 2.3101 0.0 0\nM  V30 7 C 4.0012 1.5400 0.0 0\nM  V30 8 C 2.6675 3.8501 0.0 0\nM  V30 9 C 5.3348 2.3101 0.0 0\nM  V30 10 C 4.0012 4.6201 0.0 0\nM  V30 11 C 5.3348 3.8501 0.0 0\nM  V30 END ATOM\nM  V30 BEGIN BOND\nM  V30 1 1 1 2\nM  V30 2 1 1 3\nM  V30 3 1 1 6\nM  V30 4 1 4 5\nM  V30 5 1 4 11\nM  V30 6 2 6 7\nM  V30 7 1 6 8\nM  V30 8 1 7 9\nM  V30 9 2 8 10\nM  V30 10 2 9 11\nM  V30 11 1 10 11\nM  V30 END BOND\nM  V30 END CTAB\nM  END\n"
+      ],
+      "structure": {
+        "component": [
+          {
+            "uri": "substance/pt/873373343",
+            "casRn": "873373-34-3",
+            "index": null,
+            "coefficient": null,
+            "singleAtomFragment": false,
+            "highlighted": false,
+            "svg": "<svg class=\"cas-structure-single-component-image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 170 101\" height=\"101\" width=\"170\"><svg class=\"cas-structure-maf\" y=\"0\" x=\"0\" style=\"fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:'Dialog'; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"170\" viewBox=\"0 0 170.0 101.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"101\"\n><!--Generated in ChemDoodle 12.8.0--><defs id=\"genericDefs\"\n  /><g\n  ><g transform=\"translate(83,49)\" style=\"text-rendering:geometricPrecision; color-rendering:optimizeQuality; color-interpolation:sRGB; stroke-linecap:butt; image-rendering:optimizeQuality;\"\n    ><line y2=\"1.9775\" style=\"fill:none;\" x1=\"-51.963\" x2=\"-74.5179\" y1=\"15\"\n      /><line y2=\"38.5938\" style=\"fill:none;\" x1=\"-51.963\" x2=\"-51.963\" y1=\"15\"\n      /><line y2=\"0\" style=\"fill:none;\" x1=\"-51.963\" x2=\"-25.98\" y1=\"15\"\n      /><line y2=\"-34.2731\" style=\"fill:none;\" x1=\"51.963\" x2=\"70.542\" y1=\"-45\"\n      /><line y2=\"-30\" style=\"fill:none;\" x1=\"51.963\" x2=\"25.98\" y1=\"-45\"\n      /><line y2=\"15\" style=\"fill:none;\" x1=\"-25.98\" x2=\"0\" y1=\"0\"\n      /><line y2=\"10.9585\" style=\"fill:none;\" x1=\"-22.48\" x2=\"0.0001\" y1=\"-2.0207\"\n      /><line y2=\"-30\" style=\"fill:none;\" x1=\"-25.98\" x2=\"-25.98\" y1=\"0\"\n      /><line y2=\"0\" style=\"fill:none;\" x1=\"0\" x2=\"25.98\" y1=\"15\"\n      /><line y2=\"-45\" style=\"fill:none;\" x1=\"-25.98\" x2=\"0\" y1=\"-30\"\n      /><line y2=\"-40.9585\" style=\"fill:none;\" x1=\"-22.48\" x2=\"0.0001\" y1=\"-27.9793\"\n      /><line y2=\"-30\" style=\"fill:none;\" x1=\"25.98\" x2=\"25.98\" y1=\"0\"\n      /><line y2=\"-27.9793\" style=\"fill:none;\" x1=\"22.48\" x2=\"22.48\" y1=\"-2.0207\"\n      /><line y2=\"-30\" style=\"fill:none;\" x1=\"0\" x2=\"25.98\" y1=\"-45\"\n    /></g\n    ><g transform=\"translate(83,49)\" style=\"fill:rgb(0,138,0); text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'Open Sans'; stroke:rgb(0,138,0); color-interpolation:sRGB;\"\n    ><path style=\"stroke:none;\" d=\"M-79.3336 4.1562 L-80.3336 4.1562 L-80.3336 -4.4062 L-75.5524 -4.4062 L-75.5524 -3.5312 L-79.3336 -3.5312 L-79.3336 -0.3906 L-75.7868 -0.3906 L-75.7868 0.5 L-79.3336 0.5 L-79.3336 4.1562 Z\"\n      /><path style=\"stroke:none;\" d=\"M-53.3536 49.1562 L-54.3536 49.1562 L-54.3536 40.5938 L-49.5724 40.5938 L-49.5724 41.4688 L-53.3536 41.4688 L-53.3536 44.6094 L-49.8068 44.6094 L-49.8068 45.5 L-53.3536 45.5 L-53.3536 49.1562 Z\"\n    /></g\n    ><g transform=\"translate(83,49)\" style=\"stroke-linecap:butt; text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'Open Sans'; color-interpolation:sRGB; stroke-miterlimit:5;\"\n    ><path style=\"fill:none;\" d=\"M52.396 -44.75 L51.963 -45 L51.53 -44.75\"\n      /><path d=\"M72.2741 -34.4062 L74.6959 -34.4062 Q76.3991 -34.4062 77.1647 -33.8984 Q77.9303 -33.3906 77.9303 -32.2969 Q77.9303 -31.5312 77.5084 -31.0312 Q77.0866 -30.5312 76.2584 -30.3906 L76.2584 -30.3281 Q78.2116 -30 78.2116 -28.2812 Q78.2116 -27.1406 77.4381 -26.4922 Q76.6647 -25.8438 75.2741 -25.8438 L72.2741 -25.8438 L72.2741 -34.4062 ZM73.2741 -30.75 L74.9147 -30.75 Q75.9772 -30.75 76.4381 -31.0781 Q76.8991 -31.4062 76.8991 -32.1875 Q76.8991 -32.9062 76.3834 -33.2266 Q75.8678 -33.5469 74.7428 -33.5469 L73.2741 -33.5469 L73.2741 -30.75 ZM73.2741 -29.9062 L73.2741 -26.6875 L75.0709 -26.6875 Q76.1022 -26.6875 76.6256 -27.0938 Q77.1491 -27.5 77.1491 -28.3594 Q77.1491 -29.1562 76.61 -29.5312 Q76.0709 -29.9062 74.9772 -29.9062 L73.2741 -29.9062 ZM82.8463 -32.3906 Q83.2682 -32.3906 83.6119 -32.3125 L83.4713 -31.4062 Q83.0807 -31.5 82.7682 -31.5 Q81.9869 -31.5 81.4323 -30.8672 Q80.8776 -30.2344 80.8776 -29.2969 L80.8776 -25.8438 L79.9088 -25.8438 L79.9088 -32.2656 L80.7057 -32.2656 L80.8307 -31.0781 L80.8776 -31.0781 Q81.2213 -31.7031 81.7291 -32.0469 Q82.2369 -32.3906 82.8463 -32.3906 Z\" style=\"fill:rgb(0,138,0); stroke:none;\"\n      /><path style=\"fill:none;\" d=\"M-25.547 0.25 L-25.98 0 L-26.413 0.25\"\n      /><path style=\"fill:none;\" d=\"M-0.433 14.75 L0 15 L0.433 14.75\"\n      /><path style=\"fill:none;\" d=\"M-25.98 -29.5 L-25.98 -30 L-25.547 -30.25\"\n      /><path style=\"fill:none;\" d=\"M25.547 0.25 L25.98 0 L25.98 -0.5\"\n      /><path style=\"fill:none;\" d=\"M-0.433 -44.75 L0 -45 L0.433 -44.75\"\n      /><path style=\"fill:none;\" d=\"M25.98 -29.5 L25.98 -30 L26.413 -30.25\"\n    /></g\n  ></g\n></svg\n>\n</svg>",
+            "stereoMessages": [],
+            "diagnosticMessages": [],
+            "structures": []
+          }
+        ]
+      },
+      "suppliersCount": "51",
+      "regulatoryDataAvailable": false,
+      "hitRn": null,
+      "hitName": null
+    }
+  }
+}

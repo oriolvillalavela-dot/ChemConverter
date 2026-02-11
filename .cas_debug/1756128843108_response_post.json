@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://helium.cas.org/integration/v1/substances",
+    "json": {
+      "length": 20,
+      "str": "170571-02-5"
+    },
+    "headers": {
+      "User-Agent": "python-requests/2.32.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Type": "application/json",
+      "Authorization": "Bearer ***REDACTED***"
+    }
+  },
+  "status_code": 400,
+  "text": "{\"errors\":[{\"code\":-1,\"message\":\"Invalid str input\"}]}",
+  "json": {
+    "errors": [
+      {
+        "code": -1,
+        "message": "Invalid str input"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://helium.cas.org/integration/v1/substances/substance%2Fpt%2F13047013",
+    "params": {},
+    "headers": {
+      "User-Agent": "python-requests/2.32.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Type": "application/json",
+      "Authorization": "Bearer ***REDACTED***"
+    }
+  },
+  "status_code": 429,
+  "text": "\n\n{\n \"Access Denied\":\"Policy Error\",\n \"info\":\"Retry-After: 1\",\n \"trackingId\":\"atid:5mV-uM52GScmCCoxHrfpwkltJlU\",\n \"exchangeId\":\"PqJRhKbhhRU88oBTDoxgcw\",\n \"applicationId\":\"20\",\n \"applicationName\":\"CASIntegrationAPI\"\n}\n",
+  "json": {
+    "Access Denied": "Policy Error",
+    "info": "Retry-After: 1",
+    "trackingId": "atid:5mV-uM52GScmCCoxHrfpwkltJlU",
+    "exchangeId": "PqJRhKbhhRU88oBTDoxgcw",
+    "applicationId": "20",
+    "applicationName": "CASIntegrationAPI"
+  }
+}

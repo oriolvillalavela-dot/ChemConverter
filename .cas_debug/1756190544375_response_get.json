@@ -1,0 +1,178 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://helium.cas.org/integration/v1/substances/substance%2Fpt%2F158407046",
+    "params": {},
+    "headers": {
+      "User-Agent": "python-requests/2.32.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Type": "application/json",
+      "Authorization": "Bearer ***REDACTED***"
+    }
+  },
+  "status_code": 200,
+  "text": "{\"count\":1,\"substance\":{\"uri\":\"substance/pt/158407046\",\"casRn\":\"158407-04-6\",\"name\":\"<em>tert</em>-Butyl 4-(bromomethyl)piperidine-1-carboxylate\",\"molecularFormula\":\"C<sub>11</sub>H<sub>20</sub>BrNO<sub>2</sub>\",\"molecularWeight\":278.19,\"preferredRn\":\"158407-04-6\",\"deletedRns\":[],\"alternateRns\":[],\"componentRn\":null,\"synonyms\":[\"1-Boc-4-bromomethylpiperidine\",\"[1-[<em>tert</em>-Butoxycarbonyl]-4-piperidinyl]methyl bromide\",\"4-Bromomethyl-1-(<em>tert</em>-butoxycarbonyl)piperidine\",\"4-Bromomethylpiperidine-1-carboxylic acid <em>tert</em>-butyl ester\",\"4-Bromomethylpiperidine-1-carboxylic acid tert-butyl ester\",\"<em>N</em>-Boc-4-(bromomethyl)piperidine\",\"<em>N</em>-<em>tert</em>-Butoxycarbonyl-4-bromomethylpiperidine\"],\"entryDate\":\"1994-10-17\",\"properties\":{\"boilingPoint\":null,\"density\":null,\"meltingPoint\":null,\"predictedPKa\":null},\"capturedExperimentalProperties\":{\"experimentalBoilingPoints\":[],\"experimentalDensities\":[],\"experimentalElectricConductances\":[],\"experimentalElectricConductivities\":[],\"experimentalElectricResistances\":[],\"experimentalElectricResistivities\":[],\"experimentalGlassTransitionTemperatures\":[],\"experimentalMagneticMoments\":[],\"experimentalMedianLethalDoses\":[],\"experimentalMeltingPoints\":[],\"experimentalOpticalRotatoryPowers\":[],\"experimentalRefractiveIndices\":[],\"experimentalTensileStrengths\":[]},\"capturedExperimentalSpectra\":{\"experimentalIRSpectra\":[],\"experimentalMassSpectra\":[],\"experimentalProton1HNMRs\":[{\"id\":\"EN300-157418\",\"observedNucleus\":null,\"experimentalSpectrumNumericPeakData\":null,\"experimentalSpectrumSolventCondition\":{\"displayValue\":\"Chloroform-<ital>d</ital>\",\"substanceURI\":\"substance/pt/865496\"},\"experimentalSpectrumWorkingFrequencyCondition\":{\"displayValue\":\"400 MHz\"},\"experimentalSpectrumSpectrometerCondition\":null,\"experimentalSpectrumStandardCondition\":null,\"experimentalSpectrumTemperatureCondition\":{\"displayValue\":\"20 \u00b0C\"},\"dataSource\":{\"documentFinding\":null,\"attributionGroup\":{\"attributionCode\":\"ENAMINE\",\"fullAttributionText\":\"Spectral data were obtained from Enamine Ltd.\"}}},{\"id\":\"Not Available\",\"observedNucleus\":null,\"experimentalSpectrumNumericPeakData\":{\"displayValue\":\"4.22-4.02, 3.28, 2.75-2.61, 1.85-1.72, 1.44, 1.24-1.10 ppm\"},\"experimentalSpectrumSolventCondition\":{\"displayValue\":\"Chloroform-<ital>d</ital>\",\"substanceURI\":\"substance/pt/865496\"},\"experimentalSpectrumWorkingFrequencyCondition\":null,\"experimentalSpectrumSpectrometerCondition\":null,\"experimentalSpectrumStandardCondition\":null,\"experimentalSpectrumTemperatureCondition\":null,\"dataSource\":{\"documentFinding\":{\"documentURI\":\"document/pt/document/46861081\"},\"attributionGroup\":{\"attributionCode\":\"CAS\",\"fullAttributionText\":\"\"}}}],\"experimentalCarbon13NMRs\":[{\"id\":\"Not Available\",\"observedNucleus\":null,\"experimentalSpectrumNumericPeakData\":{\"displayValue\":\"154.9, 79.7, 43.8, 39.0, 38.8, 31.0, 28.6 ppm\"},\"experimentalSpectrumSolventCondition\":{\"displayValue\":\"Chloroform-<ital>d</ital>\",\"substanceURI\":\"substance/pt/865496\"},\"experimentalSpectrumWorkingFrequencyCondition\":null,\"experimentalSpectrumSpectrometerCondition\":null,\"experimentalSpectrumStandardCondition\":null,\"experimentalSpectrumTemperatureCondition\":null,\"dataSource\":{\"documentFinding\":{\"documentURI\":\"document/pt/document/46861081\"},\"attributionGroup\":{\"attributionCode\":\"CAS\",\"fullAttributionText\":\"\"}}}],\"experimentalBoron11NMRs\":[],\"experimentalNitrogen15NMRs\":[],\"experimentalOxygen17NMRs\":[],\"experimentalFluorine19NMRs\":[],\"experimentalSilicon29NMRs\":[],\"experimentalPhosphorus31NMRs\":[],\"experimentalRamanSpectra\":[],\"experimentalUVVisibleSpectra\":[]},\"smiles\":\"O=C(OC(C)(C)C)N1CCC(CBr)CC1\",\"canonicalSmiles\":\"O=C(OC(C)(C)C)N1CCC(CBr)CC1\",\"isomericSmiles\":\"C(OC(C)(C)C)(=O)N1CCC(CBr)CC1\",\"inchi\":\"InChI=1S/C11H20BrNO2/c1-11(2,3)15-10(14)13-6-4-9(8-12)5-7-13/h9H,4-8H2,1-3H3\",\"molfiles\":[\"tert-Butyl 4-(bromomethyl)piperidine-1-carboxylate\\nC11H20BrNO2\\n158407-04-6 Copyright (C) 2025 ACS\\n 15 15  0  0  0  0  0  0  0  0999 V2000\\n    3.8500    2.8736    0.0000 C   ",
+  "json": {
+    "count": 1,
+    "substance": {
+      "uri": "substance/pt/158407046",
+      "casRn": "158407-04-6",
+      "name": "<em>tert</em>-Butyl 4-(bromomethyl)piperidine-1-carboxylate",
+      "molecularFormula": "C<sub>11</sub>H<sub>20</sub>BrNO<sub>2</sub>",
+      "molecularWeight": 278.19,
+      "preferredRn": "158407-04-6",
+      "deletedRns": [],
+      "alternateRns": [],
+      "componentRn": null,
+      "synonyms": [
+        "1-Boc-4-bromomethylpiperidine",
+        "[1-[<em>tert</em>-Butoxycarbonyl]-4-piperidinyl]methyl bromide",
+        "4-Bromomethyl-1-(<em>tert</em>-butoxycarbonyl)piperidine",
+        "4-Bromomethylpiperidine-1-carboxylic acid <em>tert</em>-butyl ester",
+        "4-Bromomethylpiperidine-1-carboxylic acid tert-butyl ester",
+        "<em>N</em>-Boc-4-(bromomethyl)piperidine",
+        "<em>N</em>-<em>tert</em>-Butoxycarbonyl-4-bromomethylpiperidine"
+      ],
+      "entryDate": "1994-10-17",
+      "properties": {
+        "boilingPoint": null,
+        "density": null,
+        "meltingPoint": null,
+        "predictedPKa": null
+      },
+      "capturedExperimentalProperties": {
+        "experimentalBoilingPoints": [],
+        "experimentalDensities": [],
+        "experimentalElectricConductances": [],
+        "experimentalElectricConductivities": [],
+        "experimentalElectricResistances": [],
+        "experimentalElectricResistivities": [],
+        "experimentalGlassTransitionTemperatures": [],
+        "experimentalMagneticMoments": [],
+        "experimentalMedianLethalDoses": [],
+        "experimentalMeltingPoints": [],
+        "experimentalOpticalRotatoryPowers": [],
+        "experimentalRefractiveIndices": [],
+        "experimentalTensileStrengths": []
+      },
+      "capturedExperimentalSpectra": {
+        "experimentalIRSpectra": [],
+        "experimentalMassSpectra": [],
+        "experimentalProton1HNMRs": [
+          {
+            "id": "EN300-157418",
+            "observedNucleus": null,
+            "experimentalSpectrumNumericPeakData": null,
+            "experimentalSpectrumSolventCondition": {
+              "displayValue": "Chloroform-<ital>d</ital>",
+              "substanceURI": "substance/pt/865496"
+            },
+            "experimentalSpectrumWorkingFrequencyCondition": {
+              "displayValue": "400 MHz"
+            },
+            "experimentalSpectrumSpectrometerCondition": null,
+            "experimentalSpectrumStandardCondition": null,
+            "experimentalSpectrumTemperatureCondition": {
+              "displayValue": "20 \u00b0C"
+            },
+            "dataSource": {
+              "documentFinding": null,
+              "attributionGroup": {
+                "attributionCode": "ENAMINE",
+                "fullAttributionText": "Spectral data were obtained from Enamine Ltd."
+              }
+            }
+          },
+          {
+            "id": "Not Available",
+            "observedNucleus": null,
+            "experimentalSpectrumNumericPeakData": {
+              "displayValue": "4.22-4.02, 3.28, 2.75-2.61, 1.85-1.72, 1.44, 1.24-1.10 ppm"
+            },
+            "experimentalSpectrumSolventCondition": {
+              "displayValue": "Chloroform-<ital>d</ital>",
+              "substanceURI": "substance/pt/865496"
+            },
+            "experimentalSpectrumWorkingFrequencyCondition": null,
+            "experimentalSpectrumSpectrometerCondition": null,
+            "experimentalSpectrumStandardCondition": null,
+            "experimentalSpectrumTemperatureCondition": null,
+            "dataSource": {
+              "documentFinding": {
+                "documentURI": "document/pt/document/46861081"
+              },
+              "attributionGroup": {
+                "attributionCode": "CAS",
+                "fullAttributionText": ""
+              }
+            }
+          }
+        ],
+        "experimentalCarbon13NMRs": [
+          {
+            "id": "Not Available",
+            "observedNucleus": null,
+            "experimentalSpectrumNumericPeakData": {
+              "displayValue": "154.9, 79.7, 43.8, 39.0, 38.8, 31.0, 28.6 ppm"
+            },
+            "experimentalSpectrumSolventCondition": {
+              "displayValue": "Chloroform-<ital>d</ital>",
+              "substanceURI": "substance/pt/865496"
+            },
+            "experimentalSpectrumWorkingFrequencyCondition": null,
+            "experimentalSpectrumSpectrometerCondition": null,
+            "experimentalSpectrumStandardCondition": null,
+            "experimentalSpectrumTemperatureCondition": null,
+            "dataSource": {
+              "documentFinding": {
+                "documentURI": "document/pt/document/46861081"
+              },
+              "attributionGroup": {
+                "attributionCode": "CAS",
+                "fullAttributionText": ""
+              }
+            }
+          }
+        ],
+        "experimentalBoron11NMRs": [],
+        "experimentalNitrogen15NMRs": [],
+        "experimentalOxygen17NMRs": [],
+        "experimentalFluorine19NMRs": [],
+        "experimentalSilicon29NMRs": [],
+        "experimentalPhosphorus31NMRs": [],
+        "experimentalRamanSpectra": [],
+        "experimentalUVVisibleSpectra": []
+      },
+      "smiles": "O=C(OC(C)(C)C)N1CCC(CBr)CC1",
+      "canonicalSmiles": "O=C(OC(C)(C)C)N1CCC(CBr)CC1",
+      "isomericSmiles": "C(OC(C)(C)C)(=O)N1CCC(CBr)CC1",
+      "inchi": "InChI=1S/C11H20BrNO2/c1-11(2,3)15-10(14)13-6-4-9(8-12)5-7-13/h9H,4-8H2,1-3H3",
+      "molfiles": [
+        "tert-Butyl 4-(bromomethyl)piperidine-1-carboxylate\nC11H20BrNO2\n158407-04-6 Copyright (C) 2025 ACS\n 15 15  0  0  0  0  0  0  0  0999 V2000\n    3.8500    2.8736    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0800    1.5400    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    3.0800    4.2073    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5400    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5400    3.0800    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0000    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5400    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   10.0100    2.8736    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   10.7800    4.2073    0.0000 Br  0  0  0  0  0  0  0  0  0  0  0  0\n    5.3900    2.8736    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    6.1600    4.2073    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    6.1600    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.7000    4.2073    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    7.7000    1.5400    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    8.4700    2.8736    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0  0  0  0\n  1  3  2  0  0  0  0\n  1 10  1  0  0  0  0\n  2  4  1  0  0  0  0\n  4  5  1  0  0  0  0\n  4  6  1  0  0  0  0\n  4  7  1  0  0  0  0\n  8  9  1  0  0  0  0\n  8 15  1  0  0  0  0\n 10 11  1  0  0  0  0\n 10 12  1  0  0  0  0\n 11 13  1  0  0  0  0\n 12 14  1  0  0  0  0\n 13 15  1  0  0  0  0\n 14 15  1  0  0  0  0\nM  END\n",
+        "tert-Butyl 4-(bromomethyl)piperidine-1-carboxylate\nC11H20BrNO2\n158407-04-6 Copyright (C) 2025 ACS\n  0  0  0     0  0            999 V3000\nM  V30 BEGIN CTAB\nM  V30 COUNTS  15 15 0 0 0\nM  V30 BEGIN ATOM\nM  V30 1 C 3.8500 2.8736 0.0 0\nM  V30 2 O 3.0800 1.5400 0.0 0\nM  V30 3 O 3.0800 4.2073 0.0 0\nM  V30 4 C 1.5400 1.5400 0.0 0\nM  V30 5 C 1.5400 3.0800 0.0 0\nM  V30 6 C 0.0000 1.5400 0.0 0\nM  V30 7 C 1.5400 0.0000 0.0 0\nM  V30 8 C 10.0100 2.8736 0.0 0\nM  V30 9 Br 10.7800 4.2073 0.0 0\nM  V30 10 N 5.3900 2.8736 0.0 0\nM  V30 11 C 6.1600 4.2073 0.0 0\nM  V30 12 C 6.1600 1.5400 0.0 0\nM  V30 13 C 7.7000 4.2073 0.0 0\nM  V30 14 C 7.7000 1.5400 0.0 0\nM  V30 15 C 8.4700 2.8736 0.0 0\nM  V30 END ATOM\nM  V30 BEGIN BOND\nM  V30 1 1 1 2\nM  V30 2 2 1 3\nM  V30 3 1 1 10\nM  V30 4 1 2 4\nM  V30 5 1 4 5\nM  V30 6 1 4 6\nM  V30 7 1 4 7\nM  V30 8 1 8 9\nM  V30 9 1 8 15\nM  V30 10 1 10 11\nM  V30 11 1 10 12\nM  V30 12 1 11 13\nM  V30 13 1 12 14\nM  V30 14 1 13 15\nM  V30 15 1 14 15\nM  V30 END BOND\nM  V30 END CTAB\nM  END\n"
+      ],
+      "structure": {
+        "component": [
+          {
+            "uri": "substance/pt/158407046",
+            "casRn": "158407-04-6",
+            "index": null,
+            "coefficient": null,
+            "singleAtomFragment": false,
+            "highlighted": false,
+            "svg": "<svg class=\"cas-structure-single-component-image\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 222 92\" height=\"92\" width=\"222\"><svg class=\"cas-structure-maf\" y=\"0\" x=\"0\" style=\"fill-opacity:1; color-rendering:auto; color-interpolation:auto; text-rendering:auto; stroke:black; stroke-linecap:square; stroke-miterlimit:10; shape-rendering:auto; stroke-opacity:1; fill:black; stroke-dasharray:none; font-weight:normal; stroke-width:1; font-family:'Dialog'; font-style:normal; stroke-linejoin:miter; font-size:12px; stroke-dashoffset:0; image-rendering:auto;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"222\" viewBox=\"0 0 222.0 92.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"92\"\n><!--Generated in ChemDoodle 12.8.0--><defs id=\"genericDefs\"\n  /><g\n  ><g transform=\"translate(108,48)\" style=\"text-rendering:geometricPrecision; color-rendering:optimizeQuality; color-interpolation:sRGB; stroke-linecap:butt; image-rendering:optimizeQuality;\"\n    ><line y2=\"5.2583\" style=\"fill:none;\" x1=\"-30\" x2=\"-41.6965\" y1=\"-15\"\n      /><line y2=\"-36.2193\" style=\"fill:none;\" x1=\"-27.9793\" x2=\"-40.2306\" y1=\"-15\"\n      /><line y2=\"-34.4693\" style=\"fill:none;\" x1=\"-31.0104\" x2=\"-43.2617\" y1=\"-13.25\"\n      /><line y2=\"-15\" style=\"fill:none;\" x1=\"-30\" x2=\"-5.3516\" y1=\"-15\"\n      /><line y2=\"10.98\" style=\"fill:none;\" x1=\"-50.9375\" x2=\"-75\" y1=\"10.98\"\n      /><line y2=\"-19.02\" style=\"fill:none;\" x1=\"-75\" x2=\"-75\" y1=\"10.98\"\n      /><line y2=\"10.98\" style=\"fill:none;\" x1=\"-75\" x2=\"-105\" y1=\"10.98\"\n      /><line y2=\"40.98\" style=\"fill:none;\" x1=\"-75\" x2=\"-75\" y1=\"10.98\"\n      /><line y2=\"-35.0917\" style=\"fill:none;\" x1=\"90\" x2=\"101.6003\" y1=\"-15\"\n      /><line y2=\"-15\" style=\"fill:none;\" x1=\"90\" x2=\"60\" y1=\"-15\"\n      /><line y2=\"-40.98\" style=\"fill:none;\" x1=\"3.544\" x2=\"15\" y1=\"-21.1383\"\n      /><line y2=\"10.98\" style=\"fill:none;\" x1=\"3.3997\" x2=\"15\" y1=\"-9.1117\"\n      /><line y2=\"-40.98\" style=\"fill:none;\" x1=\"15\" x2=\"45\" y1=\"-40.98\"\n      /><line y2=\"10.98\" style=\"fill:none;\" x1=\"15\" x2=\"45\" y1=\"10.98\"\n      /><line y2=\"-15\" style=\"fill:none;\" x1=\"45\" x2=\"60\" y1=\"-40.98\"\n      /><line y2=\"-15\" style=\"fill:none;\" x1=\"45\" x2=\"60\" y1=\"10.98\"\n      /><path d=\"M-30.25 -14.567 L-30 -15 L-29.5 -15\" style=\"fill:none; stroke-miterlimit:5;\"\n    /></g\n    ><g transform=\"translate(108,48)\" style=\"stroke-linecap:butt; fill:rgb(230,0,0); text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'Open Sans'; stroke:rgb(230,0,0); color-interpolation:sRGB; stroke-miterlimit:5;\"\n    ><path style=\"stroke:none;\" d=\"M-41.0625 10.9097 Q-41.0625 12.9722 -42.1016 14.1519 Q-43.1406 15.3316 -44.9844 15.3316 Q-46.875 15.3316 -47.9062 14.1675 Q-48.9375 13.0034 -48.9375 10.8941 Q-48.9375 8.8003 -47.9062 7.6519 Q-46.875 6.5034 -44.9844 6.5034 Q-43.125 6.5034 -42.0938 7.6753 Q-41.0625 8.8472 -41.0625 10.9097 ZM-47.8906 10.9097 Q-47.8906 12.6441 -47.1484 13.5503 Q-46.4062 14.4566 -44.9844 14.4566 Q-43.5625 14.4566 -42.8359 13.5581 Q-42.1094 12.6597 -42.1094 10.9097 Q-42.1094 9.1753 -42.8359 8.2847 Q-43.5625 7.3941 -44.9844 7.3941 Q-46.4062 7.3941 -47.1484 8.2925 Q-47.8906 9.1909 -47.8906 10.9097 Z\"\n      /><path style=\"stroke:none;\" d=\"M-41.0625 -41.0503 Q-41.0625 -38.9878 -42.1016 -37.8081 Q-43.1406 -36.6284 -44.9844 -36.6284 Q-46.875 -36.6284 -47.9062 -37.7925 Q-48.9375 -38.9566 -48.9375 -41.0659 Q-48.9375 -43.1597 -47.9062 -44.3081 Q-46.875 -45.4566 -44.9844 -45.4566 Q-43.125 -45.4566 -42.0938 -44.2847 Q-41.0625 -43.1128 -41.0625 -41.0503 ZM-47.8906 -41.0503 Q-47.8906 -39.3159 -47.1484 -38.4097 Q-46.4062 -37.5034 -44.9844 -37.5034 Q-43.5625 -37.5034 -42.8359 -38.4019 Q-42.1094 -39.3003 -42.1094 -41.0503 Q-42.1094 -42.7847 -42.8359 -43.6753 Q-43.5625 -44.5659 -44.9844 -44.5659 Q-46.4062 -44.5659 -47.1484 -43.6675 Q-47.8906 -42.7691 -47.8906 -41.0503 Z\"\n      /><path d=\"M90.25 -15.433 L90 -15 L89.5 -15\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M99.3311 -45.3863 L101.7529 -45.3863 Q103.4561 -45.3863 104.2217 -44.8784 Q104.9873 -44.3706 104.9873 -43.2769 Q104.9873 -42.5113 104.5654 -42.0113 Q104.1436 -41.5113 103.3154 -41.3706 L103.3154 -41.3081 Q105.2686 -40.98 105.2686 -39.2613 Q105.2686 -38.1206 104.4951 -37.4722 Q103.7217 -36.8238 102.3311 -36.8238 L99.3311 -36.8238 L99.3311 -45.3863 ZM100.3311 -41.73 L101.9717 -41.73 Q103.0342 -41.73 103.4951 -42.0581 Q103.9561 -42.3863 103.9561 -43.1675 Q103.9561 -43.8863 103.4404 -44.2066 Q102.9248 -44.5269 101.7998 -44.5269 L100.3311 -44.5269 L100.3311 -41.73 ZM100.3311 -40.8863 L100.3311 -37.6675 L102.1279 -37.6675 Q103.1592 -37.6675 103.6826 -38.0738 Q104.2061 -38.48 104.2061 -39.3394 Q104.2061 -40.1363 103.667 -40.5113 Q103.1279 -40.8863 102.0342 -40.8863 L100.3311 -40.8863 ZM109.9033 -43.3706 Q110.3252 -43.3706 110.6689 -43.2925 L110.5283 -42.3863 Q110.1377 -42.48 109.8252 -42.48 Q109.0439 -42.48 108.4893 -41.8472 Q107.9346 -41.2144 107.9346 -40.2769 L107.9346 -36.8238 L106.9658 -36.8238 L106.9658 -43.2456 L107.7627 -43.2456 L107.8877 -42.0581 L107.9346 -42.0581 Q108.2783 -42.6831 108.7861 -43.0269 Q109.2939 -43.3706 109.9033 -43.3706 Z\" style=\"fill:rgb(0,138,0); stroke:none;\"\n      /><path d=\"M3.3516 -10.8438 L2.2109 -10.8438 L-2.4766 -18.0312 L-2.5234 -18.0312 Q-2.4297 -16.7656 -2.4297 -15.7188 L-2.4297 -10.8438 L-3.3516 -10.8438 L-3.3516 -19.4062 L-2.2266 -19.4062 L2.4453 -12.25 L2.4922 -12.25 Q2.4922 -12.4062 2.4453 -13.2656 Q2.3984 -14.125 2.4141 -14.5 L2.4141 -19.4062 L3.3516 -19.4062 L3.3516 -10.8438 Z\" style=\"fill:rgb(0,5,255); stroke:none;\"\n      /><path d=\"M14.75 -40.547 L15 -40.98 L15.5 -40.98\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M14.75 10.547 L15 10.98 L15.5 10.98\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M44.5 -40.98 L45 -40.98 L45.25 -40.547\" style=\"fill:none; stroke:black;\"\n      /><path d=\"M44.5 10.98 L45 10.98 L45.25 10.547\" style=\"fill:none; stroke:black;\"\n    /></g\n  ></g\n></svg\n>\n</svg>",
+            "stereoMessages": [],
+            "diagnosticMessages": [],
+            "structures": []
+          }
+        ]
+      },
+      "suppliersCount": "84",
+      "regulatoryDataAvailable": false,
+      "hitRn": null,
+      "hitName": null
+    }
+  }
+}
