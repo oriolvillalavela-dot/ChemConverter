@@ -109,7 +109,7 @@ curl -X 'POST' \
 
 > *Add screenshots of the Web UI here.*
 
-| Dashboard View | Single Conversion |
+| Dashboard View | Batch Conversion |
 | :---: | :---: |
 | ![Dashboard](docs/screenshots/dashboard.png) | ![Result](docs/screenshots/results.png) |
 
