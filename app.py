@@ -49,7 +49,19 @@ def resolve(req: ResolveRequest):
         if itype == "iupac":
             smiles = iupac_to_kekule_smiles(req.value)
             if not smiles:
-                result.error = "Could not resolve IUPAC to SMILES."
+                # CIRpy failed — try CAS name search directly.
+                # This handles organometallic/abbreviation-style inputs like
+                # [Ir(COD)(PMe2Ph)(IMes)]PF6 that CIRpy cannot resolve.
+                info = cas_client.lookup_by_name(req.value, full=req.fullConversion)
+                if info:
+                    result.name   = info.get("name") or result.name
+                    result.cas    = info.get("cas")
+                    result.smiles = info.get("smiles")
+                    if req.fullConversion:
+                        result.inchi    = info.get("inchi")
+                        result.inchikey = info.get("inchikey") or info.get("inchiKey")
+                else:
+                    result.error = "Could not resolve name to SMILES or CAS."
                 return result
             result.smiles = smiles
             info = cas_client.lookup_by_smiles(smiles, full=req.fullConversion)

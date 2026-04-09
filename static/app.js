@@ -16,6 +16,7 @@
   let currentTab = "iupac"; // 'iupac' | 'smiles' | 'cas'
   let full = false;
   let rows = []; // [{input, name, smiles, cas, inchi, inchikey, status, error}]
+  let resultCache = new Map(); // dedup: normalised input key -> Promise<snapshot>
 
   // Utils
   const escapeHtml = (s) => (s ?? "").toString()
@@ -93,38 +94,74 @@
       : "Waiting…";
   }
 
+  // Cache key: SMILES is case-sensitive; IUPAC/CAS use lowercase for dedup.
+  function cacheKey(input) {
+    return currentTab === "smiles" ? input.trim() : input.trim().toLowerCase();
+  }
+
   async function processOne(input, index) {
+    const key = cacheKey(input);
     rows[index].status = "loading";
     render();
-    try {
-      const body = { inputType: currentTab, value: input, fullConversion: full };
 
-      // IMPORTANT FOR POSIT CONNECT: relative path (prefix-safe) + explicit error handling
-      const res = await fetch("./resolve", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body)
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
-      const data = await res.json();
-
-      rows[index].name     = data.name     || rows[index].name     || "";
-      rows[index].smiles   = data.smiles   || rows[index].smiles   || "";
-      rows[index].cas      = data.cas      || rows[index].cas      || "";
-      rows[index].inchi    = data.inchi    || rows[index].inchi    || "";
-      rows[index].inchikey = data.inchikey || rows[index].inchikey || "";
-
-      if (data.error) {
-        rows[index].status = "error";
-        rows[index].error = data.error;
-      } else {
-        rows[index].status = "done";
-        rows[index].error = "";
-      }
-    } catch (err) {
-      rows[index].status = "error";
-      rows[index].error = (err && err.message) ? err.message : "Request failed";
+    if (resultCache.has(key)) {
+      // Duplicate: wait for the first identical request, then copy its result.
+      const snapshot = await resultCache.get(key);
+      rows[index].name     = snapshot.name     || "";
+      rows[index].smiles   = snapshot.smiles   || "";
+      rows[index].cas      = snapshot.cas      || "";
+      rows[index].inchi    = snapshot.inchi    || "";
+      rows[index].inchikey = snapshot.inchikey || "";
+      rows[index].status   = snapshot.status;
+      rows[index].error    = snapshot.error    || "";
+      render();
+      return;
     }
+
+    // New unique input: run the API call and cache the promise immediately so
+    // concurrent workers for the same key await this promise instead of firing
+    // a second request.
+    const promise = (async () => {
+      try {
+        const body = { inputType: currentTab, value: input, fullConversion: full };
+
+        // IMPORTANT FOR POSIT CONNECT: relative path (prefix-safe) + explicit error handling
+        const res = await fetch("./resolve", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body)
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+        const data = await res.json();
+
+        rows[index].name     = data.name     || rows[index].name     || "";
+        rows[index].smiles   = data.smiles   || rows[index].smiles   || "";
+        rows[index].cas      = data.cas      || rows[index].cas      || "";
+        rows[index].inchi    = data.inchi    || rows[index].inchi    || "";
+        rows[index].inchikey = data.inchikey || rows[index].inchikey || "";
+
+        if (data.error) {
+          rows[index].status = "error";
+          rows[index].error = data.error;
+        } else {
+          rows[index].status = "done";
+          rows[index].error = "";
+        }
+      } catch (err) {
+        rows[index].status = "error";
+        rows[index].error = (err && err.message) ? err.message : "Request failed";
+      }
+      // Return a snapshot so awaiting duplicates can copy the result.
+      return {
+        name: rows[index].name, smiles: rows[index].smiles,
+        cas: rows[index].cas,   inchi:  rows[index].inchi,
+        inchikey: rows[index].inchikey, status: rows[index].status,
+        error: rows[index].error
+      };
+    })();
+
+    resultCache.set(key, promise);
+    await promise;
     render();
   }
 
@@ -138,6 +175,8 @@
       stats.textContent = "Nothing to process.";
       return;
     }
+
+    resultCache = new Map(); // reset dedup cache for each new run
 
     rows = inputs.map(i => ({
       input: i, name: "", smiles: "", cas: "", inchi: "", inchikey: "", status: "idle", error: ""

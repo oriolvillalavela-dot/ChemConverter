@@ -3,7 +3,7 @@ import json
 import re
 import time
 from pathlib import Path
-from typing import Dict, Optional, List
+from typing import Any, Dict, Optional, List
 import threading
 from html import unescape
 
@@ -220,6 +220,33 @@ def _compute_mf_mw_from_smiles(smiles: str):
     except Exception:
         return None, None
 
+# ----------------- Settings -----------------
+
+class CASSettings(BaseSettings):
+    server: str = Field("", alias="CAS_SERVER")
+    token_url: str = Field("", alias="CAS_TOKEN_URL")
+    client_id: str = Field("", alias="CAS_CLIENT_ID")
+    client_secret: str = Field("", alias="CAS_CLIENT_SECRET")
+    scope: str = Field("", alias="CAS_SCOPE")
+    grant_type: str = "client_credentials"
+    verify_ssl: Any = Field(default=True, alias="CAS_VERIFY_SSL")
+    debug: bool = Field(False, alias="CAS_DEBUG")
+    rate_limit_per_sec: float = Field(1.0)
+    cache_file: str = ".cas_token_cache.json"
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
+
+    @field_validator("verify_ssl", mode="before")
+    @classmethod
+    def _coerce_verify_ssl(cls, v: Any) -> Any:
+        if isinstance(v, bool):
+            return v
+        if isinstance(v, str):
+            if v.lower() == "true":
+                return True
+            if v.lower() == "false":
+                return False
+        return v  # treat as cert-bundle path
+
 # ----------------- Auth -----------------
 
 class CASAuth:
@@ -401,10 +428,6 @@ class CASClient:
         recs = self._search_substances(SubstanceSearchRequest(**{
             "str": smiles, "strMode": "drw", "length": 20, "echo": "false", "uriOnly": "false"
         }))
-        if not recs:
-            recs = self._search_substances(SubstanceSearchRequest(**{
-                "str": smiles, "strMode": "sub", "length": 20, "echo": "false", "uriOnly": "false"
-            }))
         if not recs:
             return {}
 
